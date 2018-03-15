@@ -32,7 +32,7 @@ router.post("/burgers/create", function(req, res) {
 
 // put route -> back to index
 router.put("/burgers/update/:id", function(req, res) {
-  db.burger.update({
+  db.Burger.update({
     devoured: true
   },
   {
